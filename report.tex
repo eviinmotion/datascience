@@ -1,0 +1,62 @@
+% Shared preamble. You may replace all of this -- only the SECTIONS in
+% report.tex are required.
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{booktabs,array,graphicx,xcolor,microtype}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=3pt}
+\definecolor{hl}{HTML}{EB6834}
+\newcommand{\dec}[1]{\textbf{\textcolor{hl}{#1}}}   % use for each decision
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4ex}
+
+\begin{document}
+\begingroup\centering
+{{\Large\bfseries Data quality: what is wrong with your slice}}\\[0.3ex]
+{{\small Group G00 $\cdot$ slice S00 $\cdot$ M1}}\\
+\endgroup
+\vspace{1ex}\hrule\vspace{1.2ex}
+
+% ── HOW TO USE THIS FILE ────────────────────────────────────────────────────
+% One section per task of M1_sheet.pdf, in the sheet's order. The task itself
+% -- what to do, step by step -- is on the sheet; each PROMPT below repeats only
+% what the section has to hold. Delete every % PROMPT line as you fill it.
+% Short and precise beats long: tables and statements, not flowing text.
+% For every decision say (1) what you decided, (2) the number that made you
+% decide it, (3) what you rejected. Rules for every hand-in: HANDIN.pdf, §6.
+% ────────────────────────────────────────────────────────────────────────────
+
+\section*{1. The extract}
+% PROMPT: M1_sheet.pdf, Task 1. This section holds: the script in the archive; in the report one small table: filter, counts, period, and the sentence on joins.
+
+
+\section*{2. Your observation, your question, your target number}
+% PROMPT: M1_sheet.pdf, Task 2. This section holds: the observation (at most five lines, evidence as a figure or link), the question, the target number with its definition and its raw value.
+
+
+\section*{3. Profile}
+% PROMPT: M1_sheet.pdf, Task 3. This section holds: the full profile as a CSV in the archive; in the report only the columns with a finding, the hidden-missing table, the grain line and the missingness lines.
+
+
+\section*{4. Outliers and who is absent}
+% PROMPT: M1_sheet.pdf, Task 4. This section holds: one table for both grains, three lines on the largest orders, two lines on the absent groups.
+
+
+\section*{5. The cleaning log}
+% PROMPT: M1_sheet.pdf, Task 5. This section holds: the log as a table. Worked rows: Scripts/cleaning_log_template.md in Unit 04.
+
+
+\section*{6. The decision that matters most}
+% PROMPT: M1_sheet.pdf, Task 6. This section holds: half a page to a page, an argument rather than a table. Presented in the mid-term session (Schedule.pdf).
+
+
+\section*{7. Metadata and personal data}
+% PROMPT: M1_sheet.pdf, Task 7. This section holds: the YAML file in the archive; in the report at most ten lines on personal data.
+
+
+\end{document}
